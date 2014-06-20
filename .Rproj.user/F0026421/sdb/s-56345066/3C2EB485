@@ -1,0 +1,16 @@
+{
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n# \n# http://www.rstudio.com/shiny/\n#\n\nlibrary(shiny)\n\nshinyUI(pageWithSidebar(\n  \n  # Application title\n  headerPanel(\"Guess The Number!\"),\n  \n  # Sidebar with a slider input for number of observations\n  sidebarPanel(\n    h4(\"Rules: Guess a number between 1 and 100. We will let you know if your number is coorect, or if it is too large or too small.\"),\n    numericInput(\"userInputID\",'Enter your guess here',0,min=0,max=100,step=1)\n  ),\n  \n  # Show a plot of the generated distribution\n  mainPanel(\n    h4('Attempts made:'),\n    verbatimTextOutput(\"attempts\"),\n    h4('You entered:'),\n    verbatimTextOutput(\"userInput\"),\n    h4('It is:'),\n    verbatimTextOutput(\"serverMsg\")\n  )\n))\n",
+    "created" : 1403238397021.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4206296339",
+    "id" : "3C2EB485",
+    "lastKnownWriteTime" : 1403239148,
+    "path" : "F:/githubWork/GuessTheNumber/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
